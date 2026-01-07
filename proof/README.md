@@ -1,6 +1,6 @@
 ## 📸 Project Proof & Working Screenshots
 
-This section demonstrates the working of the **Arduino Password-Based Door Lock System** using real-time LCD messages and servo motor behavior.
+This section demonstrates the working of the **Arduino Password-Based Door Lock System** using LCD messages and servo motor responses.
 
 ---
 
@@ -8,7 +8,8 @@ This section demonstrates the working of the **Arduino Password-Based Door Lock 
 ![System Startup](startup.png)
 
 **Description:**  
-When the system is powered ON, the LCD initializes successfully and displays a startup message indicating that the door lock system is ready to accept input.
+When power is supplied, the Arduino initializes all components.  
+The LCD displays a startup message indicating that the door lock system is active and ready to accept a password.
 
 ---
 
@@ -17,36 +18,44 @@ When the system is powered ON, the LCD initializes successfully and displays a s
 
 **Description:**  
 The user enters the password using the 4×4 keypad.  
-Each key press is detected and processed by the Arduino, while the LCD guides the user during input.
+Each key press is captured by the Arduino and displayed on the LCD to guide the user during input.
 
 ---
 
-### 🔹 Step 3: Access Granted
+### 🔹 Step 3: Access Granted (Correct Password)
 ![Access Granted](access_granted.png)
 
 **Description:**  
-If the entered password matches the stored password:
-- The LCD displays **“Access Granted”**
-- The servo motor rotates to unlock the door
-- The system allows entry
+When the entered password matches the stored password:
+- LCD displays **“Access Granted”**
+- Servo motor rotates to unlock the door
+- Authorized access is provided
 
 ---
 
-### 🔹 Step 4: Access Denied
+### 🔹 Step 4: Wrong Password / Access Denied
 ![Access Denied](access_denied.png)
 
 **Description:**  
 If an incorrect password is entered:
-- The LCD displays **“Wrong Password”**
-- The servo motor remains in the locked position
-- Unauthorized access is prevented
+- LCD displays **“Wrong Password”** or **“Access Denied”**
+- Servo motor remains in the locked position
+- Unauthorized access is blocked
+
+---
+
+### 🔹 Step 5: Door Locked State
+![Door Locked](access_locked.png)
+
+**Description:**  
+After access denial or system reset, the door remains in a locked state.  
+The servo motor returns to its default position, ensuring system security.
 
 ---
 
 ## ✅ Conclusion
-These screenshots confirm the correct functioning of:
-- Keypad input handling
-- Password verification logic
-- LCD status display
-- Servo motor-based locking mechanism
-
+These screenshots verify the correct functioning of:
+- Keypad-based password entry
+- Password validation logic
+- LCD status indication
+- Servo motor–controlled locking mechanism
