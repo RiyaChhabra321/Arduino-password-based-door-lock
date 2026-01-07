@@ -73,7 +73,7 @@ The system provides real-time user feedback, limited access attempts, and automa
 
 ## 📌 Author
 **Riya Chhabra**  
-First-Year Electronics & Communication Engineering Student
+Electronics & Communication Engineering Student
 
 ---
 
