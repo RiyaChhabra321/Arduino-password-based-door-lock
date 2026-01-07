@@ -7,4 +7,4 @@ The LCD is interfaced in 4-bit mode, the keypad is connected using row-column
 matrix wiring, and the servo motor is controlled through a PWM signal pin.
 Proper power and ground connections are ensured for stable operation.
 
-![Complete Wiring Diagram](circuit-diagram/complete_wiring.png)
+![Complete Wiring Diagram](circuit-diagram/complete_wiring.png) 
