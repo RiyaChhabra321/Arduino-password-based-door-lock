@@ -37,7 +37,7 @@ If the entered password matches the stored password:
 
 **Description:**  
 If an incorrect password is entered:
-- The LCD displays **“Access Denied”**
+- The LCD displays **“Wrong Password”**
 - The servo motor remains in the locked position
 - Unauthorized access is prevented
 
